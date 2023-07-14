@@ -1,3 +1,5 @@
+import { Observable } from "rxjs";
+
 export interface Asset {
   id: string
   type: string
@@ -5,4 +7,7 @@ export interface Asset {
   locationId: string
   locationName: string
   image?: string
+  maintenanceNotes: string
+  model: string
+  warrantyLength$: Observable<string>
 }

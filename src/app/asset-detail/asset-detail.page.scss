@@ -25,3 +25,15 @@
 #container a {
   text-decoration: none;
 }
+
+ion-thumbnail {
+  cursor: pointer;
+  height: auto;
+  width: 100%;
+
+  ion-img.asset-image::part(image) {
+    max-height: 350px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+}

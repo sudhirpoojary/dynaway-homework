@@ -3,13 +3,59 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="home"></ion-back-button>
     </ion-buttons>
-    <ion-title>Asset Detail Page</ion-title>
+    <ion-title *ngIf="details else titleSkeleton">{{ details.name }}</ion-title>
+    <ng-template #titleSkeleton
+      ><ion-skeleton-text [style.width]="skeletonWidths[0]"></ion-skeleton-text
+    ></ng-template>
   </ion-toolbar>
 </ion-header>
 
 <ion-content color="background">
-  <div id="container">
-    <strong>A dummy page</strong>
-    <p>Asset details would be displayed here</p>
-  </div>
+  <ion-thumbnail *ngIf="details?.image as image">
+    <ion-img [src]="image" class="asset-image" alt="thumbnail"></ion-img>
+  </ion-thumbnail>
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label
+            ><h2>Location</h2>
+            <p *ngIf="details else textSkeleton">{{details?.locationName}}</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label
+            ><h2>Warranty</h2>
+            <p
+              *ngIf="(details?.warrantyLength$ | async) as warrantyLength else textSkeleton"
+            >
+              {{ warrantyLength }}
+            </p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label
+            ><h2>Maintenance Notes</h2>
+            <p *ngIf="details else textSkeleton">{{details?.maintenanceNotes}}</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label>
+            <h2>Model</h2>
+            <p *ngIf="details else textSkeleton">{{details?.model}}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+
+<ng-template #textSkeleton
+  ><ion-skeleton-text
+    animated="true"
+    [style.width]="skeletonWidths[1]"
+  ></ion-skeleton-text
+></ng-template>
