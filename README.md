@@ -25,18 +25,15 @@ Your task will be to write such a scenario and then implement an automated test 
 The scenario should cover a specific functionality of the application included in this project. 
 Follow the steps below to complete the task:
 
-1. After running successfully deploying the application included in this project as described above,
+1. After successfully running the application included in this project as described above,
 identify a specific functionality to test.
 2. Create a new feature file with an appropriate name under the `e2e/features` directory. For example, `my_feature.feature`.
 3. Write a Gherkin scenario in the feature file that describes the expected behavior of the chosen functionality. 
 Use Given-When-Then format to define the steps.
 4. Create a new step definition file under the `e2e/steps` directory. For example, `my_feature.steps.ts`.
 5. Implement the step definitions for each step of the scenario in the step definition file. Use WebdriverIO to interact with the application and validate the expected behavior.
-6. Run the test using the provided `npm run e2e` command. Make sure the test runs successfully and validates the expected behavior of the chosen functionality.
-
-Keep in mind that the existing code in the `e2e` folder is not related to the application included in this project. 
-You can use it as a reference or source of inspiration, but the focus should be on creating 
-a new scenario and test specific to the application provided in this project.
+6. You can (but not mandatory) use 'chai' library to validate assertions, as demonstrted in the example.
+7. Run the test using the provided `npm run e2e` command. Make sure the test runs successfully and validates the expected behavior of the chosen functionality.
 
 Feel free to reach out if you have any further questions or need additional assistance! 
 Especially if you are having trouble running the project or the tests.

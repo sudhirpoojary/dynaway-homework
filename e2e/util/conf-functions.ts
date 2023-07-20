@@ -11,7 +11,7 @@ const path = require('path')
 const testReportDir = './test-reports/e2e'
 
 /**
- * Stupid Windows machines don't understand the asterisk so let's use this ugly
+ * Windows machines don't seem to understand the asterisk so let's use this ugly
  * work around to get a list of all the steps files in the steps folder
  *
  * Example output:

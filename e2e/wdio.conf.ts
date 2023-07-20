@@ -1,5 +1,5 @@
-import { getAllStepFilesPaths } from "./util/conf-functions";
-import { hooks } from "./util/hooks";
+import { getAllStepFilesPaths } from "./util/conf-functions"
+import { hooks } from "./util/hooks"
 
 export const config: WebdriverIO.Config = {
   //
@@ -63,7 +63,6 @@ export const config: WebdriverIO.Config = {
       browserName: "chrome",
       acceptInsecureCerts: true,
       "goog:chromeOptions": {
-        // args: ['incognito', 'headless', 'disable-gpu', 'no-sandbox'],
         args: ["incognito"],
       },
       pageLoadStrategy: "normal",
@@ -104,8 +103,6 @@ export const config: WebdriverIO.Config = {
   // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
   // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
   // gets prepended directly.
-  // baseUrl: 'https://dynaway-dev.azurewebsites.net/jkr/',
-  // baseUrl: 'https://dynaway-dev.azurewebsites.net/ionic-preview/',
   baseUrl: "http://localhost:4200/",
   //
   // Default timeout for all waitFor* commands.
@@ -180,7 +177,7 @@ export const config: WebdriverIO.Config = {
     // <string> (expression) only execute the features or scenarios with tags matching the expression
     // tagExpression: "@focus",
     // <number> timeout for step definitions
-    timeout: 480000, // 8min
+    timeout: 15000,
     // <boolean> Enable this config to treat undefined definitions as warnings.
     ignoreUndefinedDefinitions: false,
     // retry: 2
