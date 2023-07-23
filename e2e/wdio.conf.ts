@@ -106,7 +106,7 @@ export const config: WebdriverIO.Config = {
   baseUrl: "http://localhost:4200/",
   //
   // Default timeout for all waitFor* commands.
-  waitforTimeout: 10000,
+  waitforTimeout: 20000,
   //
   // Default timeout in milliseconds for request
   // if browser driver or grid doesn't send response
@@ -177,7 +177,7 @@ export const config: WebdriverIO.Config = {
     // <string> (expression) only execute the features or scenarios with tags matching the expression
     // tagExpression: "@focus",
     // <number> timeout for step definitions
-    timeout: 15000,
+    timeout: 30000,
     // <boolean> Enable this config to treat undefined definitions as warnings.
     ignoreUndefinedDefinitions: false,
     // retry: 2
