@@ -24,7 +24,7 @@ Given(/^User clicks on any of the record in home page$/, async () => {
     await skoda.click()
 })
 
-When(/^Details page should have Location, Warranty, Maintanance Notes and Model fields$/, async () => {
+When(/^Details page has Location, Warranty, Maintanance Notes and Model fields$/, async () => {
     await $('//h2[normalize-space()="Location"]').isDisplayed()
     await $('//h2[normalize-space()="Warranty"]').isDisplayed()
     await $('//h2[normalize-space()="Maintenance Notes"]').isDisplayed()

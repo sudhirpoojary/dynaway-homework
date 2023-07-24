@@ -4,7 +4,7 @@
     "type": "feature",
     "description": "",
     "line": 1,
-    "name": "Home page",
+    "name": "Work Order",
     "uri": "/Users/sudhirpoojary/dynaway-homework/e2e/features/home.feature",
     "tags": [],
     "elements": [
@@ -12,9 +12,9 @@
         "keyword": "Scenario",
         "type": "scenario",
         "description": "",
-        "name": "Verify that when user clicks on any order in home page, Location, Warranty, Model, Maintanance field and values are displayed",
+        "name": "Verify the title of the application",
         "tags": [],
-        "id": "home-page;verify-that-when-user-clicks-on-any-order-in-home-page,-location,-warranty,-model,-maintanance-field-and-values-are-displayed",
+        "id": "work-order;verify-the-title-of-the-application",
         "steps": [
           {
             "arguments": [],
@@ -22,7 +22,7 @@
             "name": "",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 1000000
             },
             "line": null,
             "match": {
@@ -35,7 +35,7 @@
             "name": "I am on the home page",
             "result": {
               "status": "passed",
-              "duration": 395000000
+              "duration": 297000000
             },
             "line": null,
             "match": {
@@ -48,7 +48,7 @@
             "name": "The header is displayed",
             "result": {
               "status": "passed",
-              "duration": 43000000
+              "duration": 44000000
             },
             "line": null,
             "match": {
@@ -61,46 +61,7 @@
             "name": "The title is \"Dynaway Homework\"",
             "result": {
               "status": "passed",
-              "duration": 38000000
-            },
-            "line": null,
-            "match": {
-              "location": "can not be determined with webdriver.io"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given",
-            "name": "User clicks on any of the record in home page",
-            "result": {
-              "status": "passed",
-              "duration": 575000000
-            },
-            "line": null,
-            "match": {
-              "location": "can not be determined with webdriver.io"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When",
-            "name": "Details page should have Location, Warranty, Maintanance Notes and Model fields",
-            "result": {
-              "status": "passed",
-              "duration": 79000000
-            },
-            "line": null,
-            "match": {
-              "location": "can not be determined with webdriver.io"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then",
-            "name": "Location value should be Copenhagen office, Warranty value should be 1 month(s) remaining, Model value should be Octavia Model and Maintanance should be Requires oil change every 10,000 miles.",
-            "result": {
-              "status": "passed",
-              "duration": 7666000000
+              "duration": 25000000
             },
             "line": null,
             "match": {
@@ -127,9 +88,9 @@
         "keyword": "Scenario",
         "type": "scenario",
         "description": "",
-        "name": "Verify that in home page for every order location, id and name fields are available",
+        "name": "Verify that when user clicks on any order in home page, Location, Warranty, Model, Maintanance field and values are displayed",
         "tags": [],
-        "id": "home-page;verify-that-in-home-page-for-every-order-location,-id-and-name-fields-are-available",
+        "id": "work-order;verify-that-when-user-clicks-on-any-order-in-home-page,-location,-warranty,-model,-maintanance-field-and-values-are-displayed",
         "steps": [
           {
             "arguments": [],
@@ -150,7 +111,7 @@
             "name": "I am on the home page",
             "result": {
               "status": "passed",
-              "duration": 474000000
+              "duration": 205000000
             },
             "line": null,
             "match": {
@@ -163,7 +124,33 @@
             "name": "The header is displayed",
             "result": {
               "status": "passed",
-              "duration": 28000000
+              "duration": 71000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "name": "User clicks on any of the record in home page",
+            "result": {
+              "status": "passed",
+              "duration": 589000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "Details page has Location, Warranty, Maintanance Notes and Model fields",
+            "result": {
+              "status": "passed",
+              "duration": 75000000
             },
             "line": null,
             "match": {
@@ -173,10 +160,73 @@
           {
             "arguments": [],
             "keyword": "Then",
-            "name": "The title is \"Dynaway Homework\"",
+            "name": "Location value should be Copenhagen office, Warranty value should be 1 month(s) remaining, Model value should be Octavia Model and Maintanance should be Requires oil change every 10,000 miles.",
             "result": {
               "status": "passed",
-              "duration": 20000000
+              "duration": 7165000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          }
+        ],
+        "retried": 0
+      },
+      {
+        "keyword": "Scenario",
+        "type": "scenario",
+        "description": "",
+        "name": "Verify that in home page for every order location, id and name fields are available",
+        "tags": [],
+        "id": "work-order;verify-that-in-home-page-for-every-order-location,-id-and-name-fields-are-available",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "name": "I am on the home page",
+            "result": {
+              "status": "passed",
+              "duration": 462000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "The header is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 27000000
             },
             "line": null,
             "match": {
@@ -189,7 +239,7 @@
             "name": "Work orders are displayed in home page",
             "result": {
               "status": "passed",
-              "duration": 546000000
+              "duration": 1552000000
             },
             "line": null,
             "match": {
@@ -226,7 +276,7 @@
         "retried": 0
       }
     ],
-    "id": "home-page",
+    "id": "work-order",
     "metadata": {
       "browser": {
         "name": "chrome",
